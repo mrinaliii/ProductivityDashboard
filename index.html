@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="video-container">
+    <!-- Video background that creates a relaxing atmosphere -->
+    <div class="videoContainer">
         <video autoplay loop muted playsinline src="215407_small.mp4"></video>
     </div>
     
+    <!-- Hidden YouTube iframe for lofi music -->
     <iframe 
-        id="yt-audio"
+        id="ytAudio"
         width="0" 
         height="0" 
         src="https://www.youtube.com/embed/jfKfPfyJRdk?enablejsapi=1" 
@@ -22,49 +24,51 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope">
     </iframe>
     
-    <div class="clock-container">
-        <h1 id="current-time"></h1>
-        <h2 id="current-date"></h2>
+    <!-- Clock display in top right corner -->
+    <div class="clockContainer">
+        <h1 id="currentTime"></h1>
+        <h2 id="currentDate"></h2>
     </div>
     
-    <div class="audio-controls">
-        <button id="play-pause-btn" class="control-btn">
+    <!-- Audio controls for YouTube music -->
+    <div class="audioControls">
+        <button id="playPauseBtn" class="controlBtn">
             <i class="bi bi-caret-right-fill"></i>
         </button>
-        <div class="volume-container">
-            <span class="control-btn"><i class="bi bi-volume-up-fill"></i></span>
-            <input type="range" id="volume-slider" class="volume-slider" min="0" max="100" value="50">
+        <div class="volumeContainer">
+            <span class="controlBtn"><i class="bi bi-volume-up-fill"></i></span>
+            <input type="range" id="volumeSlider" class="volumeSlider" min="0" max="100" value="50">
         </div>
     </div>
-
-    <div class="pomodoro-container">
-        <h1 class="pomodoro-title">Pomodoro Timer</h1>
-        <div class="timer-settings">
-            <div class="time-setting">
+    <!-- Pomodoro timer module -->
+    <div class="pomodoroContainer">
+        <h1 class="pomodoroTitle">Pomodoro Timer</h1>
+        <div class="timerSettings">
+            <div class="timeSetting">
                 <label for="workTime">Work (min)</label>
                 <input type="number" id="workTime" min="1" max="60" value="25">
             </div>
-            <div class="time-setting">
+            <div class="timeSetting">
                 <label for="breakTime">Break (min)</label>
                 <input type="number" id="breakTime" min="1" max="30" value="5">
             </div>
         </div>
-        <div class="timer-display">
+        <div class="timerDisplay">
             <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
-        <div id="status" class="timer-status">Ready to work</div>
-        <div class="timer-controls">
-            <button id="startPause" class="timer-btn">Start</button>
-            <button id="reset" class="timer-btn">Reset</button>
+        <div id="status" class="timerStatus">Ready to work</div>
+        <div class="timerControls">
+            <button id="startPause" class="timerBtn">Start</button>
+            <button id="reset" class="timerBtn">Reset</button>
         </div>
     </div>
-
-    <div class="todo-container">
-        <h2 class="todo-title">To-Do List</h2>
-        <ul id="task-list" class="task-list"></ul>
-        <div class="todo-input-container">
-            <input type="text" id="taskInput" class="task-input" placeholder="Add a task...">
-            <button id="addTask" class="add-task-btn"><i class="bi bi-plus-lg"></i></button>
+    <!-- To-do list module -->
+    <div class="todoContainer">
+        <h2 class="todoTitle">To-Do List</h2>
+        <ul id="taskList" class="taskList"></ul>
+        <div class="todoInputContainer">
+            <input type="text" id="taskInput" class="taskInput" placeholder="Add a task...">
+            <button id="addTask" class="addTaskBtn"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
     
