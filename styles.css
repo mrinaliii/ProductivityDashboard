@@ -15,7 +15,7 @@ body {
 }
 
 /* Video Background */
-.video-container {
+.videoContainer {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,88 +24,88 @@ body {
     z-index: -1;
 }
 
-.video-container video {
+.videoContainer video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* Clock Display */
-.clock-container {
+.clockContainer {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 96px;
+    right: 96px;
     text-align: right;
     z-index: 100;
 }
 
-#current-time {
-    font-size: 3.5rem;
-    margin-bottom: 8px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+#currentTime {
+    font-size: 12.8rem;
+    margin-bottom: 32px;
+    text-shadow: 3px 3px 13px rgba(0, 0, 0, 0.6);
     font-weight: 300;
 }
 
-#current-date {
-    font-size: 1.6rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+#currentDate {
+    font-size: 5.6rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
 }
 
 /* Audio Controls */
-.audio-controls {
+.audioControls {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
+    bottom: 96px;
+    left: 96px;
     display: flex;
-    gap: 15px;
+    gap: 48px;
     align-items: center;
     z-index: 100;
     background: rgba(0, 0, 0, 0.6);
-    padding: 12px 20px;
-    border-radius: 50px;
+    padding: 48px 64px;
+    border-radius: 128px;
     backdrop-filter: blur(5px);
 }
 
-.control-btn {
+.controlBtn {
     background: transparent;
     color: white;
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-size: 70px;
     transition: transform 0.2s;
 }
 
-.control-btn:hover {
+.controlBtn:hover {
     transform: scale(1.1);
 }
 
-.volume-container {
+.volumeContainer {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 40px;
 }
 
-.volume-slider {
-    width: 100px;
+.volumeSlider {
+    width: 320px;
     cursor: pointer;
     -webkit-appearance: none;
-    height: 5px;
+    height: 19px;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
+    border-radius: 10px;
     outline: none;
 }
 
-.volume-slider::-webkit-slider-thumb {
+.volumeSlider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 51px;
+    height: 51px;
     border-radius: 50%;
     background: white;
     cursor: pointer;
@@ -113,171 +113,174 @@ body {
 }
 
 /* Pomodoro Timer */
-.pomodoro-container {
+.pomodoroContainer {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 96px;
+    left: 96px;
     background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 15px;
-    width: 320px;
+    padding: 96px;
+    border-radius: 48px;
+    width: 880px;
     z-index: 10;
     backdrop-filter: blur(5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
-.pomodoro-title {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
+.pomodoroTitle {
+    font-size: 5.1rem;
+    margin-bottom: 64px;
     text-align: center;
     font-weight: 400;
 }
 
-.timer-display {
-    font-size: 4rem;
+.timerDisplay {
+    font-size: 12.8rem;
     font-weight: 300;
-    margin: 30px 0;
+    margin: 80px 0;
     font-family: 'Courier New', monospace;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 8px;
 }
 
-.timer-settings {
+.timerSettings {
     display: flex;
-    gap: 20px;
-    margin-bottom: 25px;
+    gap: 64px;
+    margin-bottom: 64px;
 }
 
-.time-setting {
+.timeSetting {
     flex: 1;
 }
 
-.time-setting label {
+.timeSetting label {
     display: block;
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 2.9rem;
+    margin-bottom: 32px;
     color: #ddd;
 }
 
-.time-setting input {
+.timeSetting input {
     width: 90%;
-    padding: 10px;
+    padding: 32px;
     background: rgba(255, 255, 255, 0.9);
     border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
+    border-radius: 19px;
+    font-size: 3rem;
     text-align: center;
 }
 
-.timer-controls {
+.timerControls {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 64px;
+    margin-top: 64px;
 }
 
-.timer-btn {
-    padding: 12px 25px;
+.timerBtn {
+    padding: 35px 72px;
     border: none;
-    border-radius: 8px;
+    border-radius: 24px;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.15);
     color: white;
-    font-size: 1.1rem;
+    font-size: 2.9rem;
     transition: all 0.3s ease;
-    min-width: 100px;
+    min-width: 272px;
 }
 
-.timer-btn:hover {
+.timerBtn:hover {
     background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
-.timer-btn:active {
+.timerBtn:active {
     transform: translateY(0);
 }
 
-.timer-status {
-    font-size: 1.1rem;
+.timerStatus {
+    font-size: 2.9rem;
     text-align: center;
-    margin: 20px 0;
-    padding: 12px;
+    margin: 56px 0;
+    padding: 35px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 24px;
     color: #eee;
 }
+
 /* To-Do List */
-.todo-container {
+.todoContainer {
     position: fixed;
-    right: 30px;
-    bottom: 120px;
+    right: 96px;
+    bottom: 320px;
     background: rgba(0, 0, 0, 0.7);
-    padding: 25px;
-    border-radius: 15px;
-    width: 280px;
+    padding: 80px;
+    border-radius: 48px;
+    width: 800px;
     z-index: 100;
     backdrop-filter: blur(5px);
 }
 
-.todo-title {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+.todoTitle {
+    font-size: 5.1rem;
+    margin-bottom: 56px;
     text-align: center;
     font-weight: 400;
 }
 
-.task-list {
+.taskList {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
-    max-height: 250px;
+    margin-bottom: 56px;
+    max-height: 640px;
     overflow-y: auto;
 }
 
-.task-list li {
-    margin: 12px 0;
+.taskList li {
+    margin: 35px 0;
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 32px;
+    border-radius: 19px;
     transition: background 0.2s;
+    font-size: 2.9rem;
 }
 
-.task-list li:hover {
+.taskList li:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.task-list li.completed {
+.taskList li.completed {
     text-decoration: line-through;
     color: #aaa;
 }
 
-.todo-input-container {
+.todoInputContainer {
     display: flex;
-    gap: 10px;
+    gap: 35px;
 }
 
-.task-input {
+.taskInput {
     flex: 1;
-    padding: 12px;
+    padding: 35px;
     border: none;
-    border-radius: 6px;
+    border-radius: 19px;
     background: rgba(255, 255, 255, 0.9);
-    font-size: 1rem;
+    font-size: 2.9rem;
 }
 
-.add-task-btn {
-    padding: 12px 16px;
+.addTaskBtn {
+    padding: 35px 48px;
     border: none;
-    border-radius: 6px;
+    border-radius: 19px;
     background: rgba(255, 255, 255, 0.15);
     color: white;
     cursor: pointer;
     transition: all 0.3s;
+    font-size: 2.9rem;
 }
 
-.add-task-btn:hover {
+.addTaskBtn:hover {
     background: rgba(255, 255, 255, 0.25);
 }
 
