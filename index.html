@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productivity Dashboard</title>
+    
+    <!-- Using Bootstrap icons for our buttons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- custom styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Video background that creates a relaxing atmosphere -->
+    <!-- background video that plays automatically -->
     <div class="videoContainer">
         <video autoplay loop muted playsinline src="215407_small.mp4"></video>
     </div>
     
-    <!-- Hidden YouTube iframe for lofi music -->
+    <!-- Hidden YouTube player for background music -->
     <iframe 
         id="ytAudio"
         width="0" 
@@ -24,13 +27,13 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope">
     </iframe>
     
-    <!-- Clock display in top right corner -->
+    <!-- Big clock showing current time and date -->
     <div class="clockContainer">
         <h1 id="currentTime"></h1>
         <h2 id="currentDate"></h2>
     </div>
     
-    <!-- Audio controls for YouTube music -->
+    <!-- Music controls - play/pause and volume slider -->
     <div class="audioControls">
         <button id="playPauseBtn" class="controlBtn">
             <i class="bi bi-caret-right-fill"></i>
@@ -40,10 +43,12 @@
             <input type="range" id="volumeSlider" class="volumeSlider" min="0" max="100" value="50">
         </div>
     </div>
-    <!-- Pomodoro timer module -->
+
+    <!-- Pomodoro timer section -->
     <div class="pomodoroContainer">
         <h1 class="pomodoroTitle">Pomodoro Timer</h1>
         <div class="timerSettings">
+            <!-- Settings for work and break durations -->
             <div class="timeSetting">
                 <label for="workTime">Work (min)</label>
                 <input type="number" id="workTime" min="1" max="60" value="25">
@@ -53,25 +58,32 @@
                 <input type="number" id="breakTime" min="1" max="30" value="5">
             </div>
         </div>
+        <!-- The big timer display -->
         <div class="timerDisplay">
             <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
+        <!-- Shows whether it's work or break time -->
         <div id="status" class="timerStatus">Ready to work</div>
+        <!-- Start/pause and reset buttons -->
         <div class="timerControls">
             <button id="startPause" class="timerBtn">Start</button>
             <button id="reset" class="timerBtn">Reset</button>
         </div>
     </div>
-    <!-- To-do list module -->
+
+    <!-- To-do list section -->
     <div class="todoContainer">
         <h2 class="todoTitle">To-Do List</h2>
+        <!-- Where tasks will appear -->
         <ul id="taskList" class="taskList"></ul>
+        <!-- Input for adding new tasks -->
         <div class="todoInputContainer">
             <input type="text" id="taskInput" class="taskInput" placeholder="Add a task...">
             <button id="addTask" class="addTaskBtn"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
     
+    <!-- Our JavaScript file with all the functionality -->
     <script src="script.js"></script>
 </body>
 </html>
