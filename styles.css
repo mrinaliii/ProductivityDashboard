@@ -33,37 +33,37 @@ body {
 /* Clock Display */
 .clockContainer {
     position: fixed;
-    top: 96px;
-    right: 96px;
+    top: 60px;
+    right: 60px;
     text-align: right;
     z-index: 100;
 }
 
 #currentTime {
-    font-size: 12.8rem;
-    margin-bottom: 32px;
-    text-shadow: 3px 3px 13px rgba(0, 0, 0, 0.6);
+    font-size: 8rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     font-weight: 300;
 }
 
 #currentDate {
-    font-size: 5.6rem;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
 }
 
 /* Audio Controls */
 .audioControls {
     position: fixed;
-    bottom: 96px;
-    left: 96px;
+    bottom: 60px;
+    left: 60px;
     display: flex;
-    gap: 48px;
+    gap: 30px;
     align-items: center;
     z-index: 100;
     background: rgba(0, 0, 0, 0.6);
-    padding: 48px 64px;
-    border-radius: 128px;
+    padding: 30px 40px;
+    border-radius: 80px;
     backdrop-filter: blur(5px);
 }
 
@@ -71,14 +71,14 @@ body {
     background: transparent;
     color: white;
     border: none;
-    width: 128px;
-    height: 128px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 70px;
+    font-size: 44px;
     transition: transform 0.2s;
 }
 
@@ -89,23 +89,23 @@ body {
 .volumeContainer {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
 }
 
 .volumeSlider {
-    width: 320px;
+    width: 200px;
     cursor: pointer;
     -webkit-appearance: none;
-    height: 19px;
+    height: 12px;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
+    border-radius: 6px;
     outline: none;
 }
 
 .volumeSlider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 51px;
-    height: 51px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: white;
     cursor: pointer;
@@ -115,37 +115,37 @@ body {
 /* Pomodoro Timer */
 .pomodoroContainer {
     position: absolute;
-    top: 96px;
-    left: 96px;
+    top: 60px;
+    left: 60px;
     background: rgba(0, 0, 0, 0.7);
-    padding: 96px;
-    border-radius: 48px;
-    width: 880px;
+    padding: 60px;
+    border-radius: 30px;
+    width: 550px;
     z-index: 10;
     backdrop-filter: blur(5px);
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .pomodoroTitle {
-    font-size: 5.1rem;
-    margin-bottom: 64px;
+    font-size: 3.2rem;
+    margin-bottom: 40px;
     text-align: center;
     font-weight: 400;
 }
 
 .timerDisplay {
-    font-size: 12.8rem;
+    font-size: 8rem;
     font-weight: 300;
-    margin: 80px 0;
+    margin: 50px 0;
     font-family: 'Courier New', monospace;
     text-align: center;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
 }
 
 .timerSettings {
     display: flex;
-    gap: 64px;
-    margin-bottom: 64px;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
 .timeSetting {
@@ -154,43 +154,43 @@ body {
 
 .timeSetting label {
     display: block;
-    font-size: 2.9rem;
-    margin-bottom: 32px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
     color: #ddd;
 }
 
 .timeSetting input {
     width: 90%;
-    padding: 32px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     border: none;
-    border-radius: 19px;
-    font-size: 3rem;
+    border-radius: 12px;
+    font-size: 1.9rem;
     text-align: center;
 }
 
 .timerControls {
     display: flex;
     justify-content: center;
-    gap: 64px;
-    margin-top: 64px;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .timerBtn {
-    padding: 35px 72px;
+    padding: 22px 45px;
     border: none;
-    border-radius: 24px;
+    border-radius: 15px;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.15);
     color: white;
-    font-size: 2.9rem;
+    font-size: 1.8rem;
     transition: all 0.3s ease;
-    min-width: 272px;
+    min-width: 170px;
 }
 
 .timerBtn:hover {
     background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 .timerBtn:active {
@@ -198,31 +198,31 @@ body {
 }
 
 .timerStatus {
-    font-size: 2.9rem;
+    font-size: 1.8rem;
     text-align: center;
-    margin: 56px 0;
-    padding: 35px;
+    margin: 35px 0;
+    padding: 22px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
+    border-radius: 15px;
     color: #eee;
 }
 
 /* To-Do List */
 .todoContainer {
     position: fixed;
-    right: 96px;
-    bottom: 320px;
+    right: 60px;
+    bottom: 200px;
     background: rgba(0, 0, 0, 0.7);
-    padding: 80px;
-    border-radius: 48px;
-    width: 800px;
+    padding: 50px;
+    border-radius: 30px;
+    width: 500px;
     z-index: 100;
     backdrop-filter: blur(5px);
 }
 
 .todoTitle {
-    font-size: 5.1rem;
-    margin-bottom: 56px;
+    font-size: 3.2rem;
+    margin-bottom: 35px;
     text-align: center;
     font-weight: 400;
 }
@@ -230,20 +230,20 @@ body {
 .taskList {
     list-style: none;
     padding: 0;
-    margin-bottom: 56px;
-    max-height: 640px;
+    margin-bottom: 35px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
 .taskList li {
-    margin: 35px 0;
+    margin: 22px 0;
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 32px;
-    border-radius: 19px;
+    padding: 20px;
+    border-radius: 12px;
     transition: background 0.2s;
-    font-size: 2.9rem;
+    font-size: 1.8rem;
 }
 
 .taskList li:hover {
@@ -257,27 +257,27 @@ body {
 
 .todoInputContainer {
     display: flex;
-    gap: 35px;
+    gap: 22px;
 }
 
 .taskInput {
     flex: 1;
-    padding: 35px;
+    padding: 22px;
     border: none;
-    border-radius: 19px;
+    border-radius: 12px;
     background: rgba(255, 255, 255, 0.9);
-    font-size: 2.9rem;
+    font-size: 1.8rem;
 }
 
 .addTaskBtn {
-    padding: 35px 48px;
+    padding: 22px 30px;
     border: none;
-    border-radius: 19px;
+    border-radius: 12px;
     background: rgba(255, 255, 255, 0.15);
     color: white;
     cursor: pointer;
     transition: all 0.3s;
-    font-size: 2.9rem;
+    font-size: 1.8rem;
 }
 
 .addTaskBtn:hover {
